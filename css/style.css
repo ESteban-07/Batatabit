@@ -33,3 +33,67 @@ html {
     font-size: 6.25%;
     font-family: 'DM Sans', sans-serif;
 }
+
+body {
+    font-size: 16rem;
+}
+
+.header {
+    position: relative;
+    background: linear-gradient(207.8deg, #201e1c 16.69%, #f7931a 100%);
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header__logo {
+    width: 200rem;
+    margin-bottom: 36rem;
+}
+
+.header__title {
+    text-align: center;
+    color: var(--just-white);
+    font-size: 24rem;
+    line-height: 26rem;
+    margin-bottom: 24rem;
+}
+
+.header__text {
+    color: var(--soft-orange);
+    text-align: center;
+    font-size: 14rem;
+}
+
+.button-wrapper {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+}
+
+.btn {
+    text-align: center;
+    color: var(--warm-black);
+    font-size: 14rem;
+    line-height: 18rem;
+    padding: 15rem 16rem;
+    background: var(--off-white);
+    border: none;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border-radius: 4rem;
+    cursor: pointer;
+}
+
+.btn__img {
+    vertical-align: middle;
+    margin-left: 14rem;
+}
