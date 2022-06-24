@@ -290,3 +290,21 @@ body {
     font-size: 14rem;
     line-height: 18rem;
 }
+
+/* Banner Section */
+
+.banner {
+    width: 100%;
+    min-width: 320rem;
+    height: 70vh;
+    background: url(/assets/img/bitcoinbaby2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner__title {
+    color: var(--just-white);
+    text-align: center;
+    padding-top: 60rem;
+}
