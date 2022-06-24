@@ -231,3 +231,62 @@ body {
 .table-container__text--blue {
     background: var(--soft-blue);
 }
+
+/* Benefits Section */
+
+.benefits {
+    position: relative;
+    background: #201e1c;
+}
+
+.benefits__icon {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.benefits__title {
+    color: var(--just-white);
+    line-height: 26rem;
+    text-align: center;
+    padding-top: 60rem;
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 24rem;
+}
+
+.benefits__text {
+    color: #808080;
+    line-height: 18rem;
+    font-size: 14rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.cards-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30rem 0 40rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16rem;
+}
+
+.card {
+    background: var(--warm-black);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+    border-radius: 4rem;
+    padding: 16rem;
+}
+
+.card__title {
+    color: var(--just-white);
+    font-size: 18rem;
+    padding: 10rem 0;
+}
+
+.card__text {
+    color: #808080;
+    font-size: 14rem;
+    line-height: 18rem;
+}
