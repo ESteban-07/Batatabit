@@ -8,8 +8,9 @@
     <title>Batatabit</title>
     <link rel="stylesheet" href="./css/style.css">
     <link
-        href=“https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;@400;500&display=swap”
-        rel=“stylesheet”>
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./css/tablet.css " media="(min-width: 900px)">
 </head>
 
 <body>
@@ -19,10 +20,10 @@
             <h1 class="header__title">La próxima revolución en el intercambio de criptomonedas.</h1>
             <p class="header__text">Batatabit te ayuda a navegar entre los diferentes precios y tendencias.</p>
             <div class="button-wrapper">
-                <button class="btn">
+                <a class="btn" href="#plans">
                     Conoce Nuestros Planes
                     <img class="btn__img" src="./assets/icons/down-arrow.svg" alt="down-arrow">
-                </button>
+                </a>
             </div>
         </div>
     </header>
@@ -33,91 +34,96 @@
                 <h1 class="coins__title">Visibilizamos todas las tasas de cambio.</h1>
                 <p class="coins__text">Traemos información en tiempo real de las casas de cambio y las monedas más
                     importantes del mundo.</p>
-                <div class="table-container">
-                    <h3 class="table-container__title">Monedas</h3>
-                    <table class="table-coins">
-                        <tr>
-                            <td class="left-cell top-left-cell">
-                                Bitcoin
-                            </td>
-                            <td class="rigth-cell top-rigth-cell">
-                                $ 1.96
-                                <img class="trending-icon" src="./assets/icons/trending-down.svg" alt="trending-down">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="left-cell">
-                                Ethereum
-                            </td>
-                            <td class="rigth-cell">
-                                $ 0.07
-                                <img class="trending-icon" src="./assets/icons/trending-up.svg" alt="trending-up">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="left-cell">
-                                Ripple
-                            </td>
-                            <td class="rigth-cell">
-                                $ 2.15
-                                <img class="trending-icon" src="./assets/icons/trending-down.svg" alt="trending-down">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="left-cell bottom-left-cel">
-                                Stellar
-                            </td>
-                            <td class="rigth-cell bottom-rigth-cel">
-                                $ 4.96
-                                <img class="trending-icon" src="./assets/icons/trending-down.svg" alt="trending-down">
-                            </td>
-                        </tr>
-                    </table>
-                    <p class="table-container__text">
-                        <span class="updated">Actualizado: </span>
-                        19 Julio 23:45
-                    </p>
-                </div>
-                <div class="table-container">
-                    <h3 class="table-container__title table-container__title--blue">Comisiones</h3>
-                    <table class="table-coins">
-                        <tr>
-                            <td class="left-cell top-left-cell">
-                                Bitcoin
-                            </td>
-                            <td class="rigth-cell top-rigth-cell">
-                                $ 1.96
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="left-cell">
-                                Ethereum
-                            </td>
-                            <td class="rigth-cell">
-                                $ 0.07
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="left-cell">
-                                Ripple
-                            </td>
-                            <td class="rigth-cell">
-                                $ 2.15
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="left-cell bottom-left-cel">
-                                Stellar
-                            </td>
-                            <td class="rigth-cell bottom-rigth-cel">
-                                $ 4.96
-                            </td>
-                        </tr>
-                    </table>
-                    <p class="table-container__text table-container__text--blue">
-                        <span class="updated">Actualizado: </span>
-                        19 Julio 23:45
-                    </p>
+                <div class="tables">
+                    <div class="table-container">
+                        <h3 class="table-container__title">Monedas</h3>
+                        <table class="table-coins">
+                            <tr>
+                                <td class="left-cell top-left-cell">
+                                    Bitcoin
+                                </td>
+                                <td class="rigth-cell top-rigth-cell">
+                                    $ 1.96
+                                    <img class="trending-icon" src="./assets/icons/trending-down.svg"
+                                        alt="trending-down">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="left-cell">
+                                    Ethereum
+                                </td>
+                                <td class="rigth-cell">
+                                    $ 0.07
+                                    <img class="trending-icon" src="./assets/icons/trending-up.svg" alt="trending-up">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="left-cell">
+                                    Ripple
+                                </td>
+                                <td class="rigth-cell">
+                                    $ 2.15
+                                    <img class="trending-icon" src="./assets/icons/trending-down.svg"
+                                        alt="trending-down">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="left-cell bottom-left-cel">
+                                    Stellar
+                                </td>
+                                <td class="rigth-cell bottom-rigth-cel">
+                                    $ 4.96
+                                    <img class="trending-icon" src="./assets/icons/trending-down.svg"
+                                        alt="trending-down">
+                                </td>
+                            </tr>
+                        </table>
+                        <p class="table-container__text">
+                            <span class="updated">Actualizado: </span>
+                            19 Julio 23:45
+                        </p>
+                    </div>
+                    <div class="table-container">
+                        <h3 class="table-container__title table-container__title--blue">Comisiones</h3>
+                        <table class="table-coins">
+                            <tr>
+                                <td class="left-cell top-left-cell">
+                                    Bitcoin
+                                </td>
+                                <td class="rigth-cell top-rigth-cell">
+                                    $ 1.96
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="left-cell">
+                                    Ethereum
+                                </td>
+                                <td class="rigth-cell">
+                                    $ 0.07
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="left-cell">
+                                    Ripple
+                                </td>
+                                <td class="rigth-cell">
+                                    $ 2.15
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="left-cell bottom-left-cel">
+                                    Stellar
+                                </td>
+                                <td class="rigth-cell bottom-rigth-cel">
+                                    $ 4.96
+                                </td>
+                            </tr>
+                        </table>
+                        <p class="table-container__text table-container__text--blue">
+                            <span class="updated">Actualizado: </span>
+                            19 Julio 23:45
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -155,7 +161,7 @@
         <section class="banner">
             <h2 class="banner__title">Conócelo hoy.</h2>
         </section>
-        <section class="plans">
+        <section class="plans" id="plans">
             <h1 class="plans__title">Escoge el plan que mejor se ajuste a ti.</h1>
             <p class="plans__text">Cualquier plan te da acceso completo a nuestra plataforma.</p>
             <div class="plan-card__slider">
