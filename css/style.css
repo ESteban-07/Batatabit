@@ -419,3 +419,22 @@ body {
     margin-left: 10rem;
     vertical-align: middle;
 }
+
+.footer {
+    background: var(--bitcoin-orange);
+    display: flex;
+    justify-content: space-around;
+    padding: 40rem 0;
+}
+
+.footer-links {
+    list-style-type: none;
+}
+
+.footer-links__item .link {
+    text-decoration: none;
+    color: var(--just-white);
+    font-size: 14rem;
+    line-height: 18rem;
+    padding-bottom: 8rem;
+}
