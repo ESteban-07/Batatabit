@@ -330,6 +330,8 @@ body {
 }
 
 .plans__title {
+    width: 90%;
+    margin: 0 auto;
     text-align: center;
     line-height: 26rem;
     color: var(--warm-black);
@@ -337,6 +339,8 @@ body {
 }
 
 .plans__text {
+    width: 90%;
+    margin: 0 auto;
     text-align: center;
     font-size: 14rem;
     line-height: 18rem;
@@ -357,7 +361,7 @@ body {
     scroll-snap-align: center;
     position: relative;
     min-width: 190px;
-    max-width: 300px;
+    max-width: 240px;
     padding: 0 16rem;
     display: flex;
     flex-direction: column;
