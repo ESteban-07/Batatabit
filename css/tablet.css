@@ -1,6 +1,19 @@
 .tables {
+  min-width: 50rem;
   flex-direction: row;
   column-gap: 4rem;
+}
+
+.tables .arrows-container {
+  display: none;
+}
+
+.tables #commissions-table {
+  display: flex;
+}
+
+.table-container__title {
+  margin-left: 2rem;
 }
 
 .cards-container {

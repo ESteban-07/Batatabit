@@ -53,7 +53,19 @@
             monedas más importantes del mundo.
           </p>
           <div class="tables">
-            <div class="table-container">
+            <div class="arrows-container">
+              <img
+                src="./assets/icons/right-arrow.svg"
+                alt="Previous table"
+                class="arrow --off"
+                id="previous-arrow" />
+              <img
+                src="./assets/icons/right-arrow.svg"
+                alt="Next table"
+                class="arrow"
+                id="next-arrow" />
+            </div>
+            <div class="table-container" id="coins-table">
               <h3 class="table-container__title">Monedas</h3>
               <table class="table-coins">
                 <tr>
@@ -102,7 +114,7 @@
                 19 Julio 23:45
               </p>
             </div>
-            <div class="table-container">
+            <div class="table-container --hide" id="commissions-table">
               <h3 class="table-container__title table-container__title--blue">
                 Comisiones
               </h3>
