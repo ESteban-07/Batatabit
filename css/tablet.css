@@ -1,16 +1,16 @@
 .tables {
   flex-direction: row;
-  column-gap: 40rem;
+  column-gap: 4rem;
 }
 
 .cards-container {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  column-gap: 16rem;
+  column-gap: 1.6rem;
 }
 
-.plan-card__slider {
+.plans__slider {
   justify-content: center;
   overflow-x: hidden;
 }

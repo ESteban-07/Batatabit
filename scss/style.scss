@@ -1,0 +1,443 @@
+@import 'variables';
+
+/* 
+** Agregando estilos: **
+
+1. Posicionamiento --> static, absolute, relative, fixed
+3. Modelo de caja (Box model) --> margin, border, padding, content
+4. Tipografía --> tipos, tamaños de fuente, etc
+5. Estilos visuales --> box-shadow, border-radius, gradient, etc
+6. Otros --> reglas CSS y más
+*/
+
+/* Estilos Globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fuente */
+html {
+  font-size: 62.5%;
+  font-family: $font-dm-sans;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: $primary-bg;
+  font-size: $text-md;
+}
+
+/* Header Section */
+
+.header {
+  position: relative;
+  background: $secondary-bg-gradient;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  &__logo {
+    width: 20rem;
+    margin-bottom: 3.6rem;
+  }
+
+  &__title {
+    text-align: center;
+    color: $white;
+    font-size: $text-xl;
+    line-height: $leading-xl;
+    margin-bottom: 2.4rem;
+  }
+
+  &__text {
+    color: $primary-soft-color;
+    text-align: center;
+    font-size: $text-sm;
+  }
+}
+
+/* CTA Button */
+
+.button-wrapper {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: $font-dm-sans;
+  font-size: $text-sm;
+  font-weight: $bold-weight;
+  line-height: $leading-sm;
+  padding: 1.5rem 1.6rem;
+  background: $light-white;
+  color: $warm-black;
+  border: none;
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  border-radius: 0.4rem;
+  cursor: pointer;
+
+  &__icon {
+    vertical-align: middle;
+    margin-left: 1.4rem;
+  }
+}
+
+/* Coins Section */
+
+.coins {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #faf8f7;
+  width: 100%;
+
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-top: 6rem;
+  }
+
+  &__img {
+    margin-bottom: 0.4rem;
+  }
+
+  &__title {
+    text-align: center;
+    color: $warm-black;
+    font-size: $text-xl;
+    line-height: $leading-xl;
+    margin-bottom: 2.4rem;
+  }
+
+  &__text {
+    color: #757575;
+    text-align: center;
+    font-size: $text-sm;
+    line-height: $leading-sm;
+    font-weight: $medium-weight;
+  }
+}
+
+/* Tables */
+
+.tables {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 6rem 0;
+
+  &__title {
+    color: #ff9536;
+    font-weight: $bold-weight;
+    margin-left: -12rem;
+
+    &--blue {
+      color: $secondary-color;
+    }
+  }
+
+  &__text {
+    font-size: $text-xs;
+    display: inline-block;
+    background: $primary-soft-color;
+    border-radius: 0.8rem;
+    font-family: $font-inter;
+    padding: 0.8rem;
+    text-align: center;
+
+    &--blue {
+      background: $secondary-soft-color;
+    }
+
+    .updated {
+      font-weight: $bold-weight;
+    }
+  }
+}
+
+.table-coins {
+  min-width: 230px;
+  max-width: 300px;
+  margin: 1.5rem 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: $font-inter;
+
+  .left-cell {
+    background: $white;
+    border: 1px solid #faf8f7;
+    border-top: none;
+    border-left: none;
+    padding: 10px 12px;
+    color: #b5b0ac;
+    font-weight: $medium-weight;
+    line-height: $leading-md;
+    letter-spacing: -0.02rem;
+  }
+
+  .rigth-cell {
+    background: $white;
+    border-bottom: 1px solid #faf8f7;
+    color: #757575;
+    font-size: $text-sm;
+    font-weight: $regular-weight;
+    line-height: $leading-md;
+    padding: 10px 12px;
+    text-align: center;
+
+    .trending-icon {
+      vertical-align: middle;
+      margin-left: 0.5rem;
+    }
+  }
+
+  .top-left-cell {
+    border-top-left-radius: 0.8rem;
+  }
+
+  .top-rigth-cell {
+    border-top-right-radius: 0.8rem;
+  }
+
+  .bottom-left-cel {
+    border-bottom-left-radius: 0.8rem;
+    border-bottom: none;
+  }
+
+  .bottom-rigth-cel {
+    border-bottom-right-radius: 0.8rem;
+    border-bottom: none;
+  }
+}
+
+/* Benefits Section */
+
+.benefits {
+  position: relative;
+  background: #201e1c;
+
+  &__icon {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__title {
+    color: $white;
+    line-height: $leading-xl;
+    text-align: center;
+    padding-top: 6rem;
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 2.4rem;
+  }
+
+  &__text {
+    color: #808080;
+    line-height: $leading-sm;
+    font-size: $text-sm;
+    font-weight: $medium-weight;
+    text-align: center;
+  }
+}
+
+/* Benefit Cards */
+
+.cards-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 3rem 0 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.6rem;
+
+  .card {
+    min-width: 288px;
+    max-width: 400px;
+    background: $warm-black;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+    border-radius: 0.4rem;
+    padding: 1.5rem;
+
+    &__title {
+      color: $white;
+      font-size: $text-lg;
+      padding: 1rem 0;
+    }
+
+    &__text {
+      color: #808080;
+      font-size: $text-sm;
+      line-height: $leading-sm;
+    }
+  }
+}
+
+/* Banner Section */
+
+.banner {
+  width: 100%;
+  min-width: 320px;
+  height: 50vh;
+  background-image: url('../assets/img/bitcoinbaby2x.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+
+  &__title {
+    color: $white;
+    text-align: center;
+    padding-top: 6rem;
+  }
+}
+
+/* Plans Section */
+
+.plans {
+  background: #faf8f7;
+  padding: 6.4rem 0;
+
+  &__title {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: $leading-xl;
+    color: $warm-black;
+    margin-bottom: 2.4rem;
+  }
+
+  &__text {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: $text-sm;
+    line-height: $leading-sm;
+    color: #757575;
+    margin-bottom: 5rem;
+  }
+
+  &__slider {
+    display: flex;
+    column-gap: 1.5rem;
+    padding: 2rem;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+
+    .plan-card {
+      scroll-snap-align: center;
+      position: relative;
+      min-width: 190px;
+      max-width: 240px;
+      padding: 0 1.6rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: $white;
+      box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+      border-radius: 0.8rem;
+
+      &__title {
+        font-size: $text-sm;
+        line-height: $leading-sm;
+        padding-top: 3rem;
+      }
+
+      &__price {
+        position: relative;
+        font-family: $font-inter;
+        font-size: 5.2rem;
+        font-weight: $bold-weight;
+        line-height: 6.3rem;
+        letter-spacing: -0.2rem;
+
+        span {
+          position: absolute;
+          top: 15%;
+          left: -15%;
+          color: #363636;
+          font-size: $text-xs;
+          line-height: $leading-xs;
+          font-weight: $medium-weight;
+        }
+      }
+
+      &__info {
+        color: #757575;
+        font-family: $font-inter;
+        font-size: $text-xs;
+        line-height: $leading-xs;
+        font-weight: $medium-weight;
+        text-align: center;
+        margin-bottom: 1.6rem;
+      }
+
+      &__recommended-tag {
+        position: absolute;
+        transform: translateY(-50%);
+        background: $primary-color;
+        border-radius: 0.8rem;
+        color: $white;
+        text-align: center;
+        font-family: $font-inter;
+        font-size: $text-xs;
+        font-weight: $bold-weight;
+        line-height: $leading-xs;
+        padding: 0.8rem;
+      }
+
+      .btn {
+        margin-bottom: 2.4rem;
+        padding: 1rem;
+        border: 2px solid $primary-color;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+/* Footer Section */
+
+.footer {
+  background: $primary-color;
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem 0;
+
+  &-links {
+    list-style-type: none;
+
+    &__item a {
+      text-decoration: none;
+      color: $white;
+      font-size: $text-sm;
+      line-height: $leading-sm;
+      padding-bottom: 0.8rem;
+    }
+  }
+}

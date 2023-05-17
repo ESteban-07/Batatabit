@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* 
 ** Agregando estilos: **
 
@@ -7,20 +8,6 @@
 5. Estilos visuales --> box-shadow, border-radius, gradient, etc
 6. Otros --> reglas CSS y más
 */
-
-/* Colores */
-:root {
-  --bitcoin-orange: #f7931a;
-  --soft-orange: #ffe9d5;
-  --secondary-blue: #1a9af7;
-  --soft-blue: #e7f5ff;
-  --warm-black: #282623;
-  --black: #201e1c;
-  --grey: #bababa;
-  --off-white: #faf8f7;
-  --just-white: #fff;
-}
-
 /* Estilos Globales */
 * {
   margin: 0;
@@ -30,17 +17,17 @@
 
 /* Fuente */
 html {
-  font-size: 6.25%;
-  font-family: 'DM Sans', sans-serif;
+  font-size: 62.5%;
+  font-family: "DM Sans", sans-serif;
   scroll-behavior: smooth;
 }
 
 body {
-  font-size: 16rem;
+  background: #e5e5e5;
+  font-size: 1.6rem;
 }
 
 /* Header Section */
-
 .header {
   position: relative;
   background: linear-gradient(207.8deg, #201e1c 16.69%, #f7931a 100%);
@@ -48,7 +35,6 @@ body {
   display: flex;
   align-items: center;
 }
-
 .header-wrapper {
   display: flex;
   flex-direction: column;
@@ -56,26 +42,24 @@ body {
   width: 90%;
   margin: 0 auto;
 }
-
 .header__logo {
-  width: 200rem;
-  margin-bottom: 36rem;
+  width: 20rem;
+  margin-bottom: 3.6rem;
 }
-
 .header__title {
   text-align: center;
-  color: var(--just-white);
-  font-size: 24rem;
-  line-height: 26rem;
-  margin-bottom: 24rem;
+  color: #fff;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  margin-bottom: 2.4rem;
 }
-
 .header__text {
-  color: var(--soft-orange);
+  color: #ffe9d5;
   text-align: center;
-  font-size: 14rem;
+  font-size: 1.4rem;
 }
 
+/* CTA Button */
 .button-wrapper {
   position: absolute;
   bottom: 0;
@@ -83,30 +67,27 @@ body {
 }
 
 .btn {
-  text-decoration: none;
+  display: flex;
+  align-items: center;
   text-align: center;
-  color: var(--warm-black);
-  font-size: 14rem;
-  line-height: 18rem;
-  padding: 15rem 16rem;
-  background: var(--off-white);
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  padding: 1.5rem 1.6rem;
+  background: #faf8f7;
+  color: #282623;
   border: none;
   box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
-  border-radius: 4rem;
+  border-radius: 0.4rem;
   cursor: pointer;
 }
-
-.btn__img {
+.btn__icon {
   vertical-align: middle;
-  margin-left: 14rem;
+  margin-left: 1.4rem;
 }
 
 /* Coins Section */
-
-/* .main {
-    width: 100vw;
-} */
-
 .coins {
   display: flex;
   flex-direction: column;
@@ -114,35 +95,32 @@ body {
   background: #faf8f7;
   width: 100%;
 }
-
 .coins-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 90%;
-  margin-top: 60rem;
+  margin-top: 6rem;
 }
-
 .coins__img {
-  margin-bottom: 40rem;
+  margin-bottom: 0.4rem;
 }
-
 .coins__title {
   text-align: center;
-  color: var(--warm-black);
-  font-size: 24rem;
-  line-height: 26rem;
-  margin-bottom: 24rem;
+  color: #282623;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  margin-bottom: 2.4rem;
 }
-
 .coins__text {
   color: #757575;
   text-align: center;
-  font-size: 14rem;
-  line-height: 18rem;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
   font-weight: 500;
 }
 
+/* Tables */
 .tables {
   display: flex;
   flex-direction: column;
@@ -150,308 +128,267 @@ body {
 }
 
 .table-container {
-  /* background-color: yellowgreen; */
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 80%;
-  margin: 60rem 0;
+  margin: 6rem 0;
 }
-
 .table-container__title {
   color: #ff9536;
   font-weight: 700;
-  margin-left: -120rem;
+  margin-left: -12rem;
+}
+.table-container__title--blue {
+  color: #1a9af7;
+}
+.table-container__text {
+  font-size: 1.2rem;
+  display: inline-block;
+  background: #ffe9d5;
+  border-radius: 0.8rem;
+  font-family: "Inter", sans-serif;
+  padding: 0.8rem;
+  text-align: center;
+}
+.table-container__text--blue {
+  background: #e7f5ff;
+}
+.table-container__text .updated {
+  font-weight: 700;
 }
 
 .table-coins {
   min-width: 230px;
   max-width: 300px;
-  margin: 15rem 0;
+  margin: 1.5rem 0;
   border-collapse: collapse;
   border-spacing: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
-
 .table-coins .left-cell {
-  background: var(--just-white);
+  background: #fff;
   border: 1px solid #faf8f7;
   border-top: none;
   border-left: none;
   padding: 10px 12px;
   color: #b5b0ac;
   font-weight: 500;
-  line-height: 19rem;
-  letter-spacing: -0.2rem;
+  line-height: 1.9rem;
+  letter-spacing: -0.02rem;
 }
-
 .table-coins .rigth-cell {
-  background: var(--just-white);
+  background: #fff;
   border-bottom: 1px solid #faf8f7;
   color: #757575;
-  font-size: 14rem;
+  font-size: 1.4rem;
   font-weight: 400;
-  line-height: 17rem;
+  line-height: 1.9rem;
   padding: 10px 12px;
   text-align: center;
 }
-
-.table-coins .top-left-cell {
-  border-top-left-radius: 8rem;
-}
-
-.table-coins .top-rigth-cell {
-  border-top-right-radius: 8rem;
-}
-
-.table-coins .bottom-left-cel {
-  border-bottom-left-radius: 8rem;
-  border-bottom: none;
-}
-
-.table-coins .bottom-rigth-cel {
-  border-bottom-right-radius: 8rem;
-  border-bottom: none;
-}
-
 .table-coins .rigth-cell .trending-icon {
   vertical-align: middle;
-  margin-left: 5rem;
+  margin-left: 0.5rem;
 }
-
-.table-container__text {
-  font-size: 12rem;
-  display: inline-block;
-  background: var(--soft-orange);
-  border-radius: 8rem;
-  font-family: 'Inter', sans-serif;
-  padding: 8rem;
-  text-align: center;
+.table-coins .top-left-cell {
+  border-top-left-radius: 0.8rem;
 }
-
-.table-container__text .updated {
-  font-weight: bold;
+.table-coins .top-rigth-cell {
+  border-top-right-radius: 0.8rem;
 }
-
-.table-container__title--blue {
-  color: var(--secondary-blue);
+.table-coins .bottom-left-cel {
+  border-bottom-left-radius: 0.8rem;
+  border-bottom: none;
 }
-
-.table-container__text--blue {
-  background: var(--soft-blue);
+.table-coins .bottom-rigth-cel {
+  border-bottom-right-radius: 0.8rem;
+  border-bottom: none;
 }
 
 /* Benefits Section */
-
 .benefits {
   position: relative;
   background: #201e1c;
 }
-
 .benefits__icon {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 .benefits__title {
-  color: var(--just-white);
-  line-height: 26rem;
+  color: #fff;
+  line-height: 2.6rem;
   text-align: center;
-  padding-top: 60rem;
+  padding-top: 6rem;
   margin: 0 auto;
   width: 80%;
-  margin-bottom: 24rem;
+  margin-bottom: 2.4rem;
 }
-
 .benefits__text {
   color: #808080;
-  line-height: 18rem;
-  font-size: 14rem;
+  line-height: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 500;
   text-align: center;
 }
 
+/* Benefit Cards */
 .cards-container {
   width: 90%;
   margin: 0 auto;
-  padding: 30rem 0 40rem;
+  padding: 3rem 0 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 16rem;
+  row-gap: 1.6rem;
 }
-
-.card {
+.cards-container .card {
   min-width: 288px;
   max-width: 400px;
-  background: var(--warm-black);
+  background: #282623;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
-  border-radius: 4rem;
-  padding: 15rem;
+  border-radius: 0.4rem;
+  padding: 1.5rem;
 }
-
-.card__title {
-  color: var(--just-white);
-  font-size: 18rem;
-  padding: 10rem 0;
+.cards-container .card__title {
+  color: #fff;
+  font-size: 1.8rem;
+  padding: 1rem 0;
 }
-
-.card__text {
+.cards-container .card__text {
   color: #808080;
-  font-size: 14rem;
-  line-height: 18rem;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
 }
 
 /* Banner Section */
-
 .banner {
   width: 100%;
   min-width: 320px;
   height: 50vh;
-  background-image: url('../assets/img/bitcoinbaby2x.jpg');
+  background-image: url("../assets/img/bitcoinbaby2x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   text-align: center;
 }
-
 .banner__title {
-  color: var(--just-white);
+  color: #fff;
   text-align: center;
-  padding-top: 60rem;
+  padding-top: 6rem;
 }
 
 /* Plans Section */
-
 .plans {
-  background-color: #faf8f7;
-  padding: 64rem 0;
+  background: #faf8f7;
+  padding: 6.4rem 0;
 }
-
 .plans__title {
   width: 90%;
   margin: 0 auto;
   text-align: center;
-  line-height: 26rem;
-  color: var(--warm-black);
-  margin-bottom: 24rem;
+  line-height: 2.6rem;
+  color: #282623;
+  margin-bottom: 2.4rem;
 }
-
 .plans__text {
   width: 90%;
   margin: 0 auto;
   text-align: center;
-  font-size: 14rem;
-  line-height: 18rem;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
   color: #757575;
-  margin-bottom: 50rem;
+  margin-bottom: 5rem;
 }
-
-.plan-card__slider {
+.plans__slider {
   display: flex;
-  column-gap: 15rem;
-  padding: 20rem;
+  column-gap: 1.5rem;
+  padding: 2rem;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
 }
-
-.plan-card__item {
+.plans__slider .plan-card {
   scroll-snap-align: center;
   position: relative;
   min-width: 190px;
   max-width: 240px;
-  padding: 0 16rem;
+  padding: 0 1.6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: var(--just-white);
+  background: #fff;
   box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
-  border-radius: 8rem;
+  border-radius: 0.8rem;
 }
-
-.plan-card__recommended {
-  position: absolute;
-  transform: translateY(-50%);
-  background: var(--bitcoin-orange);
-  border-radius: 8rem;
-  color: var(--just-white);
-  text-align: center;
-  font-family: 'Inter', sans-serif;
-  font-size: 12rem;
-  font-weight: 700;
-  line-height: 15rem;
-  padding: 8rem;
+.plans__slider .plan-card__title {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  padding-top: 3rem;
 }
-
-.plan-card__title {
-  font-size: 14rem;
-  line-height: 18rem;
-  padding-top: 30rem;
-}
-
-.plan-card__price {
+.plans__slider .plan-card__price {
   position: relative;
-  font-family: 'Inter', sans-serif;
-  font-size: 52rem;
+  font-family: "Inter", sans-serif;
+  font-size: 5.2rem;
   font-weight: 700;
-  line-height: 63rem;
-  letter-spacing: -2rem;
+  line-height: 6.3rem;
+  letter-spacing: -0.2rem;
 }
-
-.plan-card__price span {
+.plans__slider .plan-card__price span {
   position: absolute;
   top: 15%;
   left: -15%;
   color: #363636;
-  font-size: 13rem;
-  line-height: 15rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
   font-weight: 500;
 }
-
-.plan-card__info {
+.plans__slider .plan-card__info {
   color: #757575;
-  font-family: 'Inter', sans-serif;
-  font-size: 12rem;
-  line-height: 15rem;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
   font-weight: 500;
   text-align: center;
-  margin-bottom: 16rem;
+  margin-bottom: 1.6rem;
 }
-
-.plan-card__btn {
-  background: var(--off-white);
-  color: var(--warm-black);
-  font-size: 14rem;
-  line-height: 18rem;
+.plans__slider .plan-card__recommended-tag {
+  position: absolute;
+  transform: translateY(-50%);
+  background: #f7931a;
+  border-radius: 0.8rem;
+  color: #fff;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
   font-weight: 700;
-  border: 2px solid var(--bitcoin-orange);
-  border-radius: 4rem;
-  padding: 10rem;
-  margin-bottom: 24rem;
+  line-height: 1.5rem;
+  padding: 0.8rem;
+}
+.plans__slider .plan-card .btn {
+  margin-bottom: 2.4rem;
+  padding: 1rem;
+  border: 2px solid #f7931a;
+  box-shadow: none;
 }
 
-.plan-card__btn .btn__icon {
-  margin-left: 10rem;
-  vertical-align: middle;
-}
-
+/* Footer Section */
 .footer {
-  background: var(--bitcoin-orange);
+  background: #f7931a;
   display: flex;
   justify-content: space-around;
-  padding: 40rem 0;
+  padding: 4rem 0;
 }
-
 .footer-links {
   list-style-type: none;
 }
-
-.footer-links__item .link {
+.footer-links__item a {
   text-decoration: none;
-  color: var(--just-white);
-  font-size: 14rem;
-  line-height: 18rem;
-  padding-bottom: 8rem;
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  padding-bottom: 0.8rem;
 }
+
+/*# sourceMappingURL=style.css.map */
